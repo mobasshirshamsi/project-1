@@ -159,7 +159,7 @@ black-link {
 }
 .text-box h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 1 rem;
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -167,4 +167,74 @@ black-link {
     color: #fff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Light glow */
 }
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1px solid #fff;
+    font-size: 13px;
+    background: transparent;
+    postion: raltive;
+    cursor: pointer;
+}
+
+.hero-btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 24px;
+    font-size: 14px;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(150, 198, 238, 0.2); /* glassy glow on hover */
+    transition: all 2s ease;
+    z-index: -1;
+}
+
+.hero-btn:hover::before {
+    left: 0;
+}
+
+.hero-btn:hover {
+    color: #000;
+    background:rgba(153, 196, 231, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px){
+      .text-box h1 {
+        font-size: 20px;
+      }
+      .nav-links ul li{
+        display: block;
+      }
+      .nav-links {
+        position : absolute;
+        background: #d9a7c7;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+      }
+
+      }
 
