@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css ">                      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css ">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css ">                   
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -19,7 +24,9 @@
                   <img src="Images/back.png">
                 </a>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks"             
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+
                 <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,9 +35,9 @@
                 <li><a href="#ebook">eBook</a></li>
                 <li><a href="#contact">Contact</a></li>
                 </ul> 
+                    <i class="fa fa-bars"  onclick="showMenu()"></i>
         </div>
-            
-        </nav>
+                    </nav>
 
         <div class="text-box">
             <h1>Affordable Luxury for the Soulful Space</h1>
@@ -39,5 +46,146 @@
             <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
+
+
+        <!-- course -->
+
+        <section class="course">
+    <h1 class="section-title">
+        Items We Offer
+    </h1>
+
+    <p class="section-subtitle">
+        Carefully selected items crafted to elevate your lifestyle with elegance and quality.
+    </p>
+
+    <div class="row">
+
+        <div class="col">
+            <h3>Signature Collection</h3>
+            <img src="" alt="">
+            <p>A curated blend of elegance and utility — crafted for those who appreciate sophistication in every detail.</p>
+        </div>
+
+        <div class="col">
+            <h3>Modern Essentials</h3>
+            <p>Designed to match your everyday needs with style and simplicity — where function meets fashion.</p>
+        </div>
+
+        <div class="col">
+            <h3>Luxury Picks</h3>
+            <p>Premium-grade selections that define comfort, class, and timeless appeal in every piece you own.</p>
+        </div>
+
+    </div>
+</section>
+
+   <!-- <------ items section -----> \
+<section class="premium-candle">
+         <h1>
+             About LUNAEV Candles & Décor
+         </h1>
+         <p> 
+          A soulful blend of light, design, and intention — LUNAEV is more than décor, it’s a lifestyle rooted in calmness, creativity, and conscious living.
+         </p>
+        <div class="rowm">
+  <div class="colm">
+    <img src="Images/can.png" alt="Luxury Candles">
+    <div class="layer"><h3>🕯 Handmade Candles</h3></div>
+  </div>
+  <div class="colm">
+    <img src="Images/life.png" alt="Home Decor">
+    <div class="layer"><h3>🛋 Lifestyle & Home Décor</h3></div>
+  </div>
+  <div class="colm">
+    <img src="Images/cann.png" alt="Extra">
+    <div class="layer"><h3>✨ Scented Elegance</h3></div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- Coming Soon Section -->
+<section class="coming-soon-section">
+    <h1 class="section-title">More Coming Soon from LUNAEV</h1>
+    <p class="section-subtitle">
+        Thoughtfully designed tools and resources to guide your soulful lifestyle and business journey.
+    </p>
+</section>
+
+<div class="rowm">
+    <div class="colm1">
+        <img src="Images/lifee.png" alt="Journals and Planners">
+        <div class="layer">
+            <h3>📓 Stationery & Lifestyle Tools</h3>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+    <div class="colm1">
+        <img src="Images/boss.png" alt="Candle eBook">
+        <div class="layer">
+            <h3>📘 Candle Boss Blueprint</h3>
+            <p>eBook Guide</p>
+        </div>
+    </div>
+
+    <div class="colm1">
+        <img src="Images/newc.png" alt="Candle Business Course">
+        <div class="layer">
+            <h3>🎓 Candle Business Course</h3>
+            <p>Launching Soon</p>
+        </div>
+    </div>
+</div>
+
+       <!----What Sets LUNAEV Apart------>
+
+
+<section class="sets-apart-section">
+  <h1 class="section-title">What Sets LUNAEV Apart</h1>
+  <p class="section-subtitle">
+    We believe luxury should be soulful, sustainable, and accessible. Here’s what makes us different.
+  </p>
+</section>
+  <div class="features-row">
+    <div class="feature-item">
+      <img src="Images/eco.png" alt="Eco-Friendly & Non-Toxic">
+      <h3>Eco-Friendly & Non-Toxic</h3>
+    </div>
+    <div class="feature-item">
+      <img src="Images/can.png" alt="Handcrafted with Heart">
+      <h3>Handcrafted with Heart</h3>
+    </div>
+    <div class="feature-item">
+      <img src="Images/lifee.png" alt="Affordable Luxury">
+      <h3>Affordable Luxury</h3>
+    </div>
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+    
+    <!-- Javscritp for toggle Menu -->
+    <script>
+        var nanLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
 </body>
 </html>
