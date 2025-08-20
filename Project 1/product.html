@@ -1,59 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - LUNAEV</title>
-    <link rel="stylesheet" href="product.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUNAEV — Our Products</title>
+  <link rel="stylesheet" href="product.css">
+  <!-- NOTE: CSS intentionally not included as requested -->
 </head>
 <body>
 
-    <!-- Back Button -->
-    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+  <!-- Back Button -->
+  <nav class="navbar">
+    <a href="index.html" class="back-btn" aria-label="Back to Home">⬅ Back to Home</a>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h1>🌙 Our Products</h1>
-            <p>Handcrafted Luxury Candles & Décor for Your Space</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero" role="banner">
+    <!-- Replace src with your premium banner image -->
+    <!-- CSS (to be added later) will place the text over this image with an overlay -->
+    <img class="hero-bg" src="images/life.png" alt="Premium candles and décor background" />
+    <div class="hero-inner">
+      <h1 class="hero-title">🌙 Our Products</h1>
+      <p class="hero-subtitle">Handcrafted Luxury Candles & Décor for Your Space</p>
+    </div>
+  </header>
 
-    <!-- Products Grid -->
-    <section class="products-section">
-        <div class="product-card">
-            <img src="images/sculp.png" alt="Sculptural Candle">
-            <h3>Sculptural Candle</h3>
-            <p>Eco-friendly, clean-burning, perfect for home aesthetics.</p>
+  <!-- Filters / Utility Bar (optional, style later) -->
+  <section class="toolbar" aria-label="Product tools">
+    <form class="search-form" role="search">
+      <input type="search" name="q" placeholder="Search products…" aria-label="Search products">
+      <button type="submit" class="btn-search">Search</button>
+    </form>
+    <div class="sort-filter">
+      <label for="sort">Sort:</label>
+      <select id="sort" name="sort">
+        <option value="pop">Popularity</option>
+        <option value="new">Newest</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <main class="products-section" role="main">
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <article class="product-card" data-sku="LN-SCULP-01" data-price="799">
+        <!-- yahan Sculptural Candle ki image dalni hai -->
+        <img src="images/sculp.png" alt="Sculptural Candle">
+        <div class="product-info">
+          <h3 class="product-title">Sculptural Candle</h3>
+          <p class="product-desc">Eco-friendly, clean-burning, perfect for home aesthetics.</p>
+          <div class="product-meta">
             <span class="price">₹799</span>
-            <a href="#" class="buy-btn">Buy Now</a>
+            <a href="#" class="buy-btn" aria-label="Buy Sculptural Candle">Buy Now</a>
+          </div>
         </div>
+      </article>
 
-        <div class="product-card">
-            <img src="images/jar.png" alt="Jar Candle">
-            <h3>Luxury Jar Candle</h3>
-            <p>Long-lasting aroma in a reusable premium glass jar.</p>
+      <!-- Product 2 -->
+      <article class="product-card" data-sku="LN-JAR-01" data-price="999">
+        <!-- yahan Luxury Jar Candle ki image dalni hai -->
+        <img src="images/jar.png" alt="Luxury Jar Candle">
+        <div class="product-info">
+          <h3 class="product-title">Luxury Jar Candle</h3>
+          <p class="product-desc">Long-lasting aroma in a reusable premium glass jar.</p>
+          <div class="product-meta">
             <span class="price">₹999</span>
-            <a href="#" class="buy-btn">Buy Now</a>
+            <a href="#" class="buy-btn" aria-label="Buy Luxury Jar Candle">Buy Now</a>
+          </div>
         </div>
+      </article>
 
-        <div class="product-card">
-            <img src="images/trink.png" alt="Trinket Tray">
-            <h3>Marble Trinket Tray</h3>
-            <p>Minimal yet expressive décor for your table space.</p>
+      <!-- Product 3 -->
+      <article class="product-card" data-sku="LN-TRINK-01" data-price="599">
+        <!-- yahan Marble Trinket Tray ki image dalni hai -->
+        <img src="images/trink.png" alt="Marble Trinket Tray">
+        <div class="product-info">
+          <h3 class="product-title">Marble Trinket Tray</h3>
+          <p class="product-desc">Minimal yet expressive décor for your table space.</p>
+          <div class="product-meta">
             <span class="price">₹599</span>
-            <a href="#" class="buy-btn">Buy Now</a>
+            <a href="#" class="buy-btn" aria-label="Buy Marble Trinket Tray">Buy Now</a>
+          </div>
         </div>
+      </article>
 
-        <div class="product-card">
-            <img src="images/deco.png" alt="Eco Décor Piece">
-            <h3>Eco Décor Piece</h3>
-            <p>Made from white cement & eco-casting for a premium touch.</p>
+      <!-- Product 4 -->
+      <article class="product-card" data-sku="LN-DECO-01" data-price="699">
+        <!-- yahan Eco Décor Piece ki image dalni hai -->
+        <img src="images/deco.png" alt="Eco Décor Piece">
+        <div class="product-info">
+          <h3 class="product-title">Eco Décor Piece</h3>
+          <p class="product-desc">Made from white cement & eco-casting for a premium touch.</p>
+          <div class="product-meta">
             <span class="price">₹699</span>
-            <a href="#" class="buy-btn">Buy Now</a>
+            <a href="#" class="buy-btn" aria-label="Buy Eco Décor Piece">Buy Now</a>
+          </div>
         </div>
-    </section>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product-card" data-sku="LN-DIFF-01" data-price="1199">
+        <!-- yahan Luxury Diffuser ki image dalni hai -->
+        <img src="images/diff.png" alt="Luxury Diffuser">
+        <div class="product-info">
+          <h3 class="product-title">Luxury Diffuser</h3>
+          <p class="product-desc">Fill your home with calming fragrances.</p>
+          <div class="product-meta">
+            <span class="price">₹1199</span>
+            <a href="#" class="buy-btn" aria-label="Buy Luxury Diffuser">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="product-card" data-sku="LN-TEA-01" data-price="399">
+        <!-- yahan Tea Light Holder ki image dalni hai -->
+        <img src="images/light.png" alt="Tea Light Holder">
+        <div class="product-info">
+          <h3 class="product-title">Tea Light Holder</h3>
+          <p class="product-desc">Perfect for intimate décor and warm ambiance.</p>
+          <div class="product-meta">
+            <span class="price">₹399</span>
+            <a href="#" class="buy-btn" aria-label="Buy Tea Light Holder">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="product-card" data-sku="LN-WAX-01" data-price="499">
+        <!-- yahan Premium Wax Melts ki image dalni hai -->
+        <img src="images/wax.png" alt="Premium Wax Melts">
+        <div class="product-info">
+          <h3 class="product-title">Premium Wax Melts</h3>
+          <p class="product-desc">Slow release of fragrance for lasting freshness.</p>
+          <div class="product-meta">
+            <span class="price">₹499</span>
+            <a href="#" class="buy-btn" aria-label="Buy Premium Wax Melts">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="product-card" data-sku="LN-CRYST-01" data-price="1499">
+        <!-- yahan Crystal Candle ki image dalni hai -->
+        <img src="images/crystaal.png" alt="Crystal Candle">
+        <div class="product-info">
+          <h3 class="product-title">Crystal Candle</h3>
+          <p class="product-desc">Infused with crystals for positive energy.</p>
+          <div class="product-meta">
+            <span class="price">₹1499</span>
+            <a href="#" class="buy-btn" aria-label="Buy Crystal Candle">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 9 -->
+      <article class="product-card" data-sku="LN-TRAYSET-01" data-price="899">
+        <!-- yahan Minimal Tray Set ki image dalni hai -->
+        <img src="images/trayset.png" alt="Minimal Tray Set">
+        <div class="product-info">
+          <h3 class="product-title">Minimal Tray Set</h3>
+          <p class="product-desc">Elegant multipurpose trays for décor & utility.</p>
+          <div class="product-meta">
+            <span class="price">₹899</span>
+            <a href="#" class="buy-btn" aria-label="Buy Minimal Tray Set">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 10 -->
+      <article class="product-card" data-sku="LN-WALL-01" data-price="1599">
+        <!-- yahan Handcrafted Wall Hanging ki image dalni hai -->
+        <img src="images/waall.png" alt="Handcrafted Wall Hanging">
+        <div class="product-info">
+          <h3 class="product-title">Handcrafted Wall Hanging</h3>
+          <p class="product-desc">Unique statement piece for your interiors.</p>
+          <div class="product-meta">
+            <span class="price">₹1599</span>
+            <a href="#" class="buy-btn" aria-label="Buy Handcrafted Wall Hanging">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 11 -->
+      <article class="product-card" data-sku="LN-SET-01" data-price="1999">
+        <!-- yahan Luxury Candle Set ki image dalni hai -->
+        <img src="images/candleset.png" alt="Luxury Candle Set">
+        <div class="product-info">
+          <h3 class="product-title">Luxury Candle Set</h3>
+          <p class="product-desc">Gift-ready pack of premium candles in multiple scents.</p>
+          <div class="product-meta">
+            <span class="price">₹1999</span>
+            <a href="#" class="buy-btn" aria-label="Buy Luxury Candle Set">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 12 -->
+      <article class="product-card" data-sku="LN-AROMA-01" data-price="699">
+        <!-- yahan Aroma Stones ki image dalni hai -->
+        <img src="images/aroma.png" alt="Aroma Stones">
+        <div class="product-info">
+          <h3 class="product-title">Aroma Stones</h3>
+          <p class="product-desc">Slow fragrance release stones for wardrobes & drawers.</p>
+          <div class="product-meta">
+            <span class="price">₹699</span>
+            <a href="#" class="buy-btn" aria-label="Buy Aroma Stones">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 13 -->
+      <article class="product-card" data-sku="LN-PILLAR-01" data-price="749">
+        <!-- yahan Textured Pillar Candle ki image dalni hai -->
+        <img src="images/pillar.png" alt="Textured Pillar Candle">
+        <div class="product-info">
+          <h3 class="product-title">Textured Pillar Candle</h3>
+          <p class="product-desc">Sculpted texture with a clean, slow burn.</p>
+          <div class="product-meta">
+            <span class="price">₹749</span>
+            <a href="#" class="buy-btn" aria-label="Buy Textured Pillar Candle">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 14 -->
+      <article class="product-card" data-sku="LN-VASE-01" data-price="1299">
+        <!-- yahan Minimal Ceramic Vase ki image dalni hai -->
+        <img src="images/vase.png" alt="Minimal Ceramic Vase">
+        <div class="product-info">
+          <h3 class="product-title">Minimal Ceramic Vase</h3>
+          <p class="product-desc">Soft curves, matte finish — effortless elegance.</p>
+          <div class="product-meta">
+            <span class="price">₹1299</span>
+            <a href="#" class="buy-btn" aria-label="Buy Minimal Ceramic Vase">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 15 -->
+      <article class="product-card" data-sku="LN-MATCH-01" data-price="249">
+        <!-- yahan Glass Match Jar ki image dalni hai -->
+        <img src="images/matchjar.png" alt="Glass Match Jar">
+        <div class="product-info">
+          <h3 class="product-title">Glass Match Jar</h3>
+          <p class="product-desc">Aesthetic strike-anywhere matches in a reusable jar.</p>
+          <div class="product-meta">
+            <span class="price">₹249</span>
+            <a href="#" class="buy-btn" aria-label="Buy Glass Match Jar">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 16 -->
+      <article class="product-card" data-sku="LN-COASTER-01" data-price="549">
+        <!-- yahan Marble Coaster Set ki image dalni hai -->
+        <img src="images/coaster.png" alt="Marble Coaster Set">
+        <div class="product-info">
+          <h3 class="product-title">Marble Coaster Set</h3>
+          <p class="product-desc">Premium stone coasters to elevate your table.</p>
+          <div class="product-meta">
+            <span class="price">₹549</span>
+            <a href="#" class="buy-btn" aria-label="Buy Marble Coaster Set">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year">2025</span> LUNAEV. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional: Tiny JS just to update year (no CSS used) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
